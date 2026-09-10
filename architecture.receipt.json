@@ -1,0 +1,12 @@
+{
+  "diagram_type": "architecture",
+  "output": "architecture.html",
+  "specification_sha256": "be3dfa429019fd7f188c6d7ef17dd02e4b472f3f7e5a1788e6736f7dbb3a37c7",
+  "specification_bytes": 13607,
+  "artifact_sha256": "8d904229c3f150d5dba3a13075f58531659ad841917a268768622ff6200a7f29",
+  "artifact_bytes": 812411,
+  "validation": "9/9 showcase, 0 errors, 0 warnings",
+  "browser_evidence": "failed",
+  "visual_review": "not completed: Chrome exited before screenshots were available",
+  "correction_rounds": 2
+}

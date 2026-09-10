@@ -1,0 +1,313 @@
+{
+    "schema_version":  1,
+    "diagram_type":  "architecture",
+    "meta":  {
+                 "title":  "Mobile platform architecture",
+                 "locale":  "en",
+                 "quality_profile":  "showcase",
+                 "viewBox":  [
+                                 1380,
+                                 900
+                             ]
+             },
+    "components":  [
+                       {
+                           "id":  "mobile",
+                           "type":  "frontend",
+                           "label":  "Flutter mobile app",
+                           "sublabel":  "Mobile client / map UI",
+                           "pos":  [
+                                       80,
+                                       310
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "identity",
+                           "type":  "security",
+                           "label":  "Keycloak",
+                           "sublabel":  "Authentication layer",
+                           "pos":  [
+                                       530,
+                                       110
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "rest",
+                           "type":  "backend",
+                           "label":  "FastAPI REST API",
+                           "sublabel":  "API layer / authorization",
+                           "pos":  [
+                                       530,
+                                       310
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "relational",
+                           "type":  "database",
+                           "label":  "PostgreSQL",
+                           "sublabel":  "Relational data",
+                           "pos":  [
+                                       1080,
+                                       210
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "documents",
+                           "type":  "database",
+                           "label":  "MongoDB",
+                           "sublabel":  "Document data",
+                           "pos":  [
+                                       1080,
+                                       420
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "maps",
+                           "type":  "external",
+                           "label":  "Maps service",
+                           "sublabel":  "Tiles / geographic content",
+                           "pos":  [
+                                       80,
+                                       540
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "compose",
+                           "type":  "backend",
+                           "label":  "Docker Compose",
+                           "sublabel":  "Local service definitions",
+                           "pos":  [
+                                       80,
+                                       760
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "containers",
+                           "type":  "cloud",
+                           "label":  "Docker",
+                           "sublabel":  "Local container runtime",
+                           "pos":  [
+                                       530,
+                                       760
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "git",
+                           "type":  "backend",
+                           "label":  "Git",
+                           "sublabel":  "Local source control",
+                           "pos":  [
+                                       1080,
+                                       760
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       },
+                       {
+                           "id":  "github",
+                           "type":  "external",
+                           "label":  "GitHub",
+                           "sublabel":  "Remote source repository",
+                           "pos":  [
+                                       1080,
+                                       590
+                                   ],
+                           "size":  [
+                                        230,
+                                        80
+                                    ]
+                       }
+                   ],
+    "boundaries":  [
+                       {
+                           "kind":  "security-group",
+                           "label":  "User device / untrusted client",
+                           "wraps":  [
+                                         "mobile"
+                                     ],
+                           "pad":  24
+                       },
+                       {
+                           "kind":  "security-group",
+                           "label":  "Identity trust boundary",
+                           "wraps":  [
+                                         "identity"
+                                     ],
+                           "pad":  24
+                       },
+                       {
+                           "kind":  "security-group",
+                           "label":  "Application trust boundary",
+                           "wraps":  [
+                                         "rest"
+                                     ],
+                           "pad":  24
+                       },
+                       {
+                           "kind":  "security-group",
+                           "label":  "Private data layer",
+                           "wraps":  [
+                                         "relational",
+                                         "documents"
+                                     ],
+                           "pad":  24
+                       },
+                       {
+                           "kind":  "security-group",
+                           "label":  "External maps provider",
+                           "wraps":  [
+                                         "maps"
+                                     ],
+                           "pad":  24
+                       },
+                       {
+                           "kind":  "region",
+                           "label":  "Development infrastructure / developer workstation",
+                           "wraps":  [
+                                         "compose",
+                                         "containers",
+                                         "git"
+                                     ],
+                           "pad":  24
+                       },
+                       {
+                           "kind":  "security-group",
+                           "label":  "External source hosting",
+                           "wraps":  [
+                                         "github"
+                                     ],
+                           "pad":  20
+                       }
+                   ],
+    "connections":  [
+                        {
+                            "id":  "login",
+                            "from":  "mobile",
+                            "to":  "identity",
+                            "label":  "OIDC + PKCE / HTTPS",
+                            "variant":  "security",
+                            "fromSide":  "top",
+                            "toSide":  "left",
+                            "via":  [
+                                        [
+                                            195,
+                                            150
+                                        ]
+                                    ]
+                        },
+                        {
+                            "id":  "requests",
+                            "from":  "mobile",
+                            "to":  "rest",
+                            "label":  "HTTPS / bearer JWT",
+                            "variant":  "emphasis"
+                        },
+                        {
+                            "id":  "keys",
+                            "from":  "rest",
+                            "to":  "identity",
+                            "label":  "HTTPS / JWKS",
+                            "variant":  "security",
+                            "labelAt":  [
+                                            645,
+                                            235
+                                        ]
+                        },
+                        {
+                            "id":  "sql",
+                            "from":  "rest",
+                            "to":  "relational",
+                            "label":  "SQL read / write"
+                        },
+                        {
+                            "id":  "docs",
+                            "from":  "rest",
+                            "to":  "documents",
+                            "label":  "Document read / write"
+                        },
+                        {
+                            "id":  "tiles",
+                            "from":  "mobile",
+                            "to":  "maps",
+                            "label":  "HTTPS / map tiles",
+                            "labelAt":  [
+                                            195,
+                                            460
+                                        ]
+                        },
+                        {
+                            "id":  "orchestrate",
+                            "from":  "compose",
+                            "to":  "containers",
+                            "label":  "Start local services",
+                            "variant":  "dashed"
+                        },
+                        {
+                            "id":  "sync",
+                            "from":  "git",
+                            "to":  "github",
+                            "label":  "Push / pull",
+                            "variant":  "dashed"
+                        }
+                    ],
+    "cards":  [
+                  {
+                      "dot":  "rose",
+                      "title":  "Proposed trust model",
+                      "items":  [
+                                    "Initial design: OIDC authorization code + PKCE; API validates JWTs using cached Keycloak keys.",
+                                    "Only the API accesses application databases. Responses return along the request paths."
+                                ]
+                  },
+                  {
+                      "dot":  "cyan",
+                      "title":  "Maps integration",
+                      "items":  [
+                                    "Leaflet is a web map library: a Flutter WebView bridge or a native map integration is still to be chosen.",
+                                    "The external maps provider is unspecified; Leaflet itself does not host map tiles."
+                                ]
+                  },
+                  {
+                      "dot":  "slate",
+                      "title":  "Local development",
+                      "items":  [
+                                    "Proposed Compose stack: FastAPI, Keycloak, PostgreSQL and MongoDB in Docker; Flutter runs separately.",
+                                    "Git / GitHub track source and Compose configuration. Production hosting and Keycloak persistence are TBD."
+                                ]
+                  }
+              ]
+}
