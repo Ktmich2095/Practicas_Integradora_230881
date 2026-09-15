@@ -2,32 +2,54 @@
 
 ## Descripción
 
-En esta práctica se diseñó la arquitectura de una plataforma móvil, representando de forma visual los principales componentes del sistema y la comunicación entre ellos.
+En esta práctica se generó una arquitectura de software utilizando **Codex** y la herramienta **Archify**.
 
-La arquitectura contempla una aplicación móvil desarrollada con **Flutter**, autenticación mediante **Keycloak**, una API REST con **FastAPI**, bases de datos **PostgreSQL** y **MongoDB**, así como servicios de mapas externos.
+El sistema representa una aplicación móvil desarrollada con **Flutter**, autenticación con **Keycloak**, una API REST en **FastAPI**, almacenamiento con **PostgreSQL** y **MongoDB**, además de servicios externos de mapas.
 
-## Tecnologías
+También se generó un diagrama interactivo en HTML para visualizar los componentes, relaciones, flujos y límites de confianza del sistema.
 
-* Flutter
-* FastAPI
-* Keycloak
-* PostgreSQL
-* MongoDB
-* Docker y Docker Compose
-* Git y GitHub
+## Tecnologías utilizadas
 
-## Arquitectura
+- Flutter
+- FastAPI
+- Keycloak
+- PostgreSQL
+- MongoDB
+- Docker
+- Docker Compose
+- Git y GitHub
+- Codex CLI
+- Archify
 
-El diagrama muestra la comunicación entre la aplicación móvil, el sistema de autenticación, la API, las bases de datos y los servicios externos.
+## Archivos de la práctica
+
+- [architecture-inicial.json](./architecture-inicial.json)  
+  Definición de la arquitectura generada con Archify.
+
+- [architecture-inicial.visual-check.html](./architecture-inicial.visual-check.html)  
+  Archivo de validación visual de la arquitectura.
+
+- [index.html](./index.html)  
+  Visualización interactiva principal del diagrama de arquitectura.
+
+- [README.md](./README.md)  
+  Documentación de la práctica.
+
+- [Evidencias_Practica02.pdf](./Evidencias_Practica02.pdf)  
+  Evidencias del proceso de instalación, configuración y uso de Codex y Archify.
 
 ## GitHub Pages
 
-Puedes visualizar la práctica en el siguiente enlace:
+Puedes visualizar el diagrama interactivo desde GitHub Pages:
 
-🔗 https://ktmich2095.github.io/Practicas_Integradora_230881/
+🔗 https://ktmich2095.github.io/Practicas_Integradora_230881/Practica02/
 
-## Archivos
+## Repositorio
 
-* `architecture.json` - Definición de la arquitectura.
-* `index.html` - Visualización del diagrama.
-* `README.md` - Documentación de la práctica.
+Repositorio principal:
+
+🔗 https://github.com/Ktmich2095/Practicas_Integradora_230881
+
+## Resultado
+
+Como resultado se obtuvo una representación visual de la arquitectura del sistema, mostrando la comunicación entre el cliente móvil, autenticación, API, bases de datos, servicios externos e infraestructura de desarrollo.
