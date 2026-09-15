@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Arquitectura inicial · Aplicación móvil",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1360,
+      810
+    ]
+  },
+  "components": [
+    {
+      "id": "movil",
+      "type": "frontend",
+      "label": "Flutter",
+      "sublabel": "Cliente móvil",
+      "pos": [
+        70,
+        310
+      ],
+      "size": [
+        210,
+        80
+      ]
+    },
+    {
+      "id": "identidad",
+      "type": "security",
+      "label": "Keycloak",
+      "sublabel": "Capa de autenticación",
+      "pos": [
+        540,
+        100
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "rest",
+      "type": "backend",
+      "label": "FastAPI",
+      "sublabel": "Capa de API · REST",
+      "pos": [
+        540,
+        310
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "relacional",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Datos relacionales",
+      "pos": [
+        1070,
+        230
+      ],
+      "size": [
+        220,
+        80
+      ]
+    },
+    {
+      "id": "documental",
+      "type": "database",
+      "label": "MongoDB",
+      "sublabel": "Documentos",
+      "pos": [
+        1070,
+        430
+      ],
+      "size": [
+        220,
+        80
+      ]
+    },
+    {
+      "id": "mapas",
+      "type": "external",
+      "label": "Servicio de mapas",
+      "sublabel": "Proveedor por definir",
+      "pos": [
+        70,
+        100
+      ],
+      "size": [
+        210,
+        80
+      ]
+    },
+    {
+      "id": "compose",
+      "type": "cloud",
+      "label": "Docker Compose",
+      "sublabel": "Orquesta servicios locales",
+      "pos": [
+        540,
+        640
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "docker",
+      "type": "cloud",
+      "label": "Docker",
+      "sublabel": "Ejecuta contenedores",
+      "pos": [
+        1070,
+        640
+      ],
+      "size": [
+        220,
+        80
+      ]
+    },
+    {
+      "id": "git",
+      "type": "backend",
+      "label": "Git",
+      "sublabel": "Repositorio local",
+      "pos": [
+        70,
+        640
+      ],
+      "size": [
+        210,
+        80
+      ]
+    },
+    {
+      "id": "github",
+      "type": "external",
+      "label": "GitHub",
+      "sublabel": "Repositorio remoto",
+      "pos": [
+        70,
+        460
+      ],
+      "size": [
+        210,
+        80
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "Dispositivo · no confiable",
+      "wraps": [
+        "movil"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Identidad",
+      "wraps": [
+        "identidad"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Servidor · valida acceso",
+      "wraps": [
+        "rest"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Capa de datos · red privada",
+      "wraps": [
+        "relacional",
+        "documental"
+      ],
+      "pad": 26
+    },
+    {
+      "kind": "security-group",
+      "label": "Servicio externo",
+      "wraps": [
+        "mapas"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "region",
+      "label": "Infraestructura de desarrollo y control de versiones local",
+      "wraps": [
+        "git",
+        "compose",
+        "docker"
+      ],
+      "pad": 26
+    }
+  ],
+  "connections": [
+    {
+      "id": "login",
+      "from": "movil",
+      "to": "identidad",
+      "label": "OIDC + PKCE",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solicitud",
+      "from": "movil",
+      "to": "rest",
+      "label": "HTTPS · Bearer JWT",
+      "variant": "emphasis",
+      "labelDy": 30
+    },
+    {
+      "id": "claves",
+      "from": "rest",
+      "to": "identidad",
+      "label": "HTTPS · JWKS",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDy": -55
+    },
+    {
+      "id": "sql",
+      "from": "rest",
+      "to": "relacional",
+      "label": "SQL · lectura / escritura",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "docs",
+      "from": "rest",
+      "to": "documental",
+      "label": "CRUD · documentos",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "teselas",
+      "from": "movil",
+      "to": "mapas",
+      "label": "HTTPS · mapas",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDy": -55
+    },
+    {
+      "id": "versiones",
+      "from": "git",
+      "to": "github",
+      "label": "push / pull",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDy": -55
+    },
+    {
+      "id": "configuracion",
+      "from": "git",
+      "to": "compose",
+      "label": "compose.yaml",
+      "variant": "dashed"
+    },
+    {
+      "id": "contenedores",
+      "from": "compose",
+      "to": "docker",
+      "label": "Crear / iniciar servicios",
+      "variant": "dashed"
+    },
+    {
+      "id": "entorno",
+      "from": "compose",
+      "to": "rest",
+      "label": "Levanta API y dependencias",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "rose",
+      "title": "Autenticación propuesta",
+      "items": [
+        "Keycloak entrega tokens al cliente con OIDC + PKCE.",
+        "FastAPI valida JWT con claves JWKS y aplica permisos.",
+        "Las bases de datos no se exponen al cliente móvil."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Solicitudes y respuestas",
+      "items": [
+        "Las flechas indican el inicio; las respuestas regresan al origen.",
+        "La API devuelve JSON; las bases responden con datos.",
+        "Leaflet: integración web / WebView por confirmar en Flutter."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Alcance inicial",
+      "items": [
+        "Límites de confianza propuestos, pendientes de implementación.",
+        "Compose coordina FastAPI, Keycloak, PostgreSQL y MongoDB.",
+        "Líneas discontinuas: desarrollo; GitHub no implica CI/CD."
+      ]
+    }
+  ]
+}
