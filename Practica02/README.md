@@ -23,10 +23,10 @@ También se generó un diagrama interactivo en HTML para visualizar los componen
 
 ## Archivos de la práctica
 
-- [architecture-inicial.json](./architecture-inicial.json)  
+- [architecture-inicial.json](./visual-check/arquitectura-inicial.json)  
   Definición de la arquitectura generada con Archify.
 
-- [architecture-inicial.visual-check.html](./architecture-inicial.visual-check.html)  
+- [architecture-inicial.visual-check.html](./visual-check/architecture-inicial.visual-check.html)  
   Archivo de validación visual de la arquitectura.
 
 - [index.html](./index.html)  
@@ -35,7 +35,7 @@ También se generó un diagrama interactivo en HTML para visualizar los componen
 - [README.md](./README.md)  
   Documentación de la práctica.
 
-- [Evidencias_Practica02.pdf](./Evidencias_Practica02.pdf)  
+- [Evidencias_Practica02.pdf](./evidencias/Evidencias_Practica02.pdf)  
   Evidencias del proceso de instalación, configuración y uso de Codex y Archify.
 
 ## GitHub Pages
