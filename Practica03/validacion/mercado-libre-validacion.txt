@@ -1,0 +1,10 @@
+diagram_type: architecture
+output: C:/Users/PC-08/Desktop/Practicas_Integradora_230881/mercado-libre-archify.html
+specification_sha256: 2f7ebfc56cdd738fb44fadfed9fde30deac5524a0169ffceba6fdb8fae1a8a85
+artifact_sha256: 64f46b6b38a97bbf26d03ffdbdb1f4419792f58243e1cf9aa7e552e79bf0d2fc
+validation: 9/9 showcase, 0 errors, 0 warnings
+browser_evidence: passed
+visual_review: passed
+correction_rounds: 2
+Visual review scope: 1440x900 light and 2048x1320 dark screenshots. The Archify artifact is a concise overview; the expanded companion contains the full nine-block analysis.
+Viewer UI and html lang default to English. Authored content is Spanish.

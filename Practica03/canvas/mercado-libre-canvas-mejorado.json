@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Mercado Libre · Lienzo de modelo de negocio",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1292,
+      690
+    ],
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "socios",
+      "type": "backend",
+      "label": "8. Socios clave",
+      "sublabel": "Logística · banca · integradores",
+      "pos": [
+        17,
+        20
+      ],
+      "size": [
+        221,
+        440
+      ]
+    },
+    {
+      "id": "actividades",
+      "type": "backend",
+      "label": "7. Actividades clave",
+      "sublabel": "Comercio · pagos · envíos · crédito",
+      "pos": [
+        255,
+        20
+      ],
+      "size": [
+        229.5,
+        210
+      ]
+    },
+    {
+      "id": "recursos",
+      "type": "backend",
+      "label": "6. Recursos clave",
+      "sublabel": "Tecnología · datos · logística · capital",
+      "pos": [
+        255,
+        250
+      ],
+      "size": [
+        229.5,
+        210
+      ]
+    },
+    {
+      "id": "valor",
+      "type": "backend",
+      "label": "2. Propuesta de valor",
+      "sublabel": "Comprar, vender y pagar con confianza",
+      "pos": [
+        501.5,
+        20
+      ],
+      "size": [
+        263.5,
+        440
+      ]
+    },
+    {
+      "id": "relacion",
+      "type": "backend",
+      "label": "4. Relación con clientes",
+      "sublabel": "Autoservicio · reputación · fidelización",
+      "pos": [
+        782,
+        20
+      ],
+      "size": [
+        238,
+        210
+      ]
+    },
+    {
+      "id": "canales",
+      "type": "backend",
+      "label": "3. Canales",
+      "sublabel": "Web · aplicaciones · QR · terminales",
+      "pos": [
+        782,
+        250
+      ],
+      "size": [
+        238,
+        210
+      ]
+    },
+    {
+      "id": "segmentos",
+      "type": "backend",
+      "label": "1. Segmentos de clientes",
+      "sublabel": "Compradores · vendedores · comercios",
+      "pos": [
+        1037,
+        20
+      ],
+      "size": [
+        238,
+        440
+      ]
+    },
+    {
+      "id": "costos",
+      "type": "backend",
+      "label": "9. Estructura de costos",
+      "sublabel": "Tecnología · logística · promoción · pagos · fondeo",
+      "pos": [
+        17,
+        480
+      ],
+      "size": [
+        620.5,
+        180
+      ]
+    },
+    {
+      "id": "ingresos",
+      "type": "backend",
+      "label": "5. Fuentes de ingresos",
+      "sublabel": "Comisiones · publicidad · crédito · suscripciones · ventas propias",
+      "pos": [
+        654.5,
+        480
+      ],
+      "size": [
+        620.5,
+        180
+      ]
+    }
+  ],
+  "connections": [],
+  "cards": [
+    {
+      "dot": "amber",
+      "title": "Comercio conectado",
+      "items": [
+        "Compradores, vendedores individuales, empresas y comercios.",
+        "Mercado Pago + Mercado Envíos + Mercado Ads."
+      ]
+    }
+  ]
+}
