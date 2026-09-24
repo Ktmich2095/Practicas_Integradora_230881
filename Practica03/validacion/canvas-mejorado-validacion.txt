@@ -1,0 +1,29 @@
+VERSIÓN MEJORADA DEL LIENZO DE MERCADO LIBRE
+
+Entrega: mercado-libre-canvas-mejorado.html
+Idioma del documento, contenido y controles: español.
+Fuente de requisitos: prompt-mejorado.txt.
+Versión anterior conservada: mercado-libre-canvas.html.
+
+Archify genera el esquema SVG integrado en la sección desplegable del nuevo HTML.
+La interfaz ampliable es una adaptación propia, comprobada por separado.
+
+Recibo de Archify
+diagram_type: architecture
+output: C:/Users/PC-08/Desktop/Practicas_Integradora_230881/Practica03/mercado-libre-base-mejorada.archify.html
+specification_sha256: 840273dd31885273734c51b97b2e6b9b3b076c541111874b9d97520b4a714d85
+artifact_sha256: f03e8665f451e221fbef4150bec42b44f2a7e1206ac356d178f3f4040a644d8c
+validation: 9/9 showcase, 0 errors, 0 warnings
+browser_evidence: passed
+visual_review: passed
+correction_rounds: 0
+
+HTML adaptado: d07a54ea0036144d9bbdbcb08dcfbef9dc0a628ee8b895e1cc52163bfad37087
+Pruebas propias: canvas-mejorado-pruebas.json.
+Los nueve recuadros muestran resumen y tres ejemplos al pasar el cursor.
+Cierre con Escape, apertura por teclado, clic en móvil, controles de tema e impresión comprobados.
+Sin desbordamiento de la vista inicial a 1440×900, 1600×1000, 1920×1080 y 2048×1320.
+Móvil 390×844: lectura vertical, sin desbordamiento horizontal.
+Revisión visual de capturas: vista principal, ampliación y tema oscuro.
+La interfaz original de Archify del archivo técnico conserva sus controles en inglés;
+el HTML entregado usa una interfaz propia en español y únicamente integra su esquema SVG.

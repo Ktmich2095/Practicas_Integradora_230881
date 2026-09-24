@@ -1,0 +1,15 @@
+Utiliza Archify para generar un Business Model Canvas de Mercado Libre como plataforma multiplataforma.
+
+Incluye los nueve bloques del modelo Canvas:
+
+1. Segmentos de clientes
+2. Propuesta de valor
+3. Canales
+4. Relación con clientes
+5. Fuentes de ingresos
+6. Recursos clave
+7. Actividades clave
+8. Socios clave
+9. Estructura de costos
+
+Genera el resultado de forma visual, clara y organizada.

@@ -1,0 +1,120 @@
+{
+  "pantallas": [
+    {
+      "ancho": 1440,
+      "alto": 900,
+      "contenidoAncho": 1440,
+      "contenidoAlto": 900,
+      "bloques": 9,
+      "idioma": "es"
+    },
+    {
+      "ancho": 1600,
+      "alto": 1000,
+      "contenidoAncho": 1600,
+      "contenidoAlto": 1000,
+      "bloques": 9,
+      "idioma": "es"
+    },
+    {
+      "ancho": 1920,
+      "alto": 1080,
+      "contenidoAncho": 1920,
+      "contenidoAlto": 1080,
+      "bloques": 9,
+      "idioma": "es"
+    },
+    {
+      "ancho": 2048,
+      "alto": 1320,
+      "contenidoAncho": 2048,
+      "contenidoAlto": 1320,
+      "bloques": 9,
+      "idioma": "es"
+    },
+    {
+      "ancho": 390,
+      "alto": 844,
+      "contenidoAncho": 375,
+      "contenidoAlto": 2721,
+      "bloques": 9,
+      "idioma": "es"
+    }
+  ],
+  "interacciones": [
+    {
+      "id": "socios",
+      "visible": true,
+      "titulo": "Socios clave",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "actividades",
+      "visible": true,
+      "titulo": "Actividades clave",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "recursos",
+      "visible": true,
+      "titulo": "Recursos clave",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "valor",
+      "visible": true,
+      "titulo": "Propuesta de valor",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "relacion",
+      "visible": true,
+      "titulo": "Relación con clientes",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "canales",
+      "visible": true,
+      "titulo": "Canales",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "segmentos",
+      "visible": true,
+      "titulo": "Segmentos de clientes",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "costos",
+      "visible": true,
+      "titulo": "Estructura de costos",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    },
+    {
+      "id": "ingresos",
+      "visible": true,
+      "titulo": "Fuentes de ingresos",
+      "ejemplos": true,
+      "contenido": 6,
+      "dentro": true
+    }
+  ],
+  "resultado": "correcto",
+  "sha256": "d07a54ea0036144d9bbdbcb08dcfbef9dc0a628ee8b895e1cc52163bfad37087"
+}
