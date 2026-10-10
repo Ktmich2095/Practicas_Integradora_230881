@@ -89,28 +89,25 @@ Consultar [el diagrama Mermaid](diagramas/flujo_pantallas.md) para las rutas pri
 Completar estos espacios con tus capturas. Puedes guardarlas en `docs/capturas/` y agregar cada imagen con `![Descripción](docs/capturas/nombre.png)`.
 
 ### Captura del tablero general
+![alt text](./img/imageTwo.png)
 
-> **Espacio para captura:** agregar aquí la vista general con las tres secciones.
+
 
 ### Capturas de pantallas compartidas
 
-> **Espacio para capturas:** agregar aquí acceso, registro, recuperación, inicio, perfil y notificaciones.
+![alt text](./img/image.png)
 
 ### Capturas del flujo Comprador
-
-> **Espacio para capturas:** agregar aquí las filas del recorrido desde búsqueda hasta calificación.
+![alt text](./img/imageThree.png)
 
 ### Capturas del flujo Vendedor
 
-> **Espacio para capturas:** agregar aquí las filas desde panel hasta estadísticas.
+![alt text](./img/imageFour.png)
 
-### Captura del diagrama de navegación
-
-> **Espacio para captura:** agregar aquí el Mermaid renderizado con sus conexiones.
 
 ### Enlace de GitHub Pages
 
-> **URL de esta práctica:** [PENDIENTE: pegar aquí el enlace de GitHub Pages].
+> **URL de esta práctica:** [Enlace de GitHub Pages](https://ktmich2095.github.io/Practicas_Integradora_230881/Practica06)
 
 ## Material para Archify
 

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#233A66">
+  <title>Práctica 06 · Resultado final — Nexo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../">← Ver sketches</a>
+    <a class="wordmark" href="#top" aria-label="Nexo, inicio del tablero"><span class="brand-mark">n</span> nexo<span class="wordmark-dot">.</span></a>
+    <span class="stage-label">PRÁCTICA 06 <span>/</span> DISEÑO FINAL</span>
+  </header>
+  <main id="top">
+    <section class="intro">
+      <div><p class="eyebrow">DEL SKETCH A LA EXPERIENCIA</p><h1>Un marketplace.<br><span>Dos formas de conectar.</span></h1><p class="intro-copy">Encuentra lo que te inspira. Vende lo que otros buscan.<br>Una propuesta móvil de alta fidelidad, inspirada en Mercado Libre.</p></div>
+      <aside class="intro-aside"><div class="version-chip"><span></span> Etapa 02 · Alta fidelidad</div><p><strong>27</strong> pantallas <span>·</span> <strong>2</strong> roles</p><p class="small">Misma navegación. Una nueva expresión visual.</p><button class="button dark" data-open="P01">Explorar el prototipo <span>↗</span></button></aside>
+    </section>
+    <nav class="board-tools" aria-label="Secciones del tablero">
+      <div><a href="#compartidas">01 · Compartidas <span>7</span></a><a href="#comprador">02 · Comprador <span>10</span></a><a href="#vendedor">03 · Vendedor <span>10</span></a></div>
+      <button id="all-screens" class="text-button">Ver todo el tablero ↗</button>
+    </nav>
+    <section class="route-guide" aria-label="Mapa de acceso">
+      <span class="eyebrow">LA EXPERIENCIA COMIENZA AQUÍ</span>
+      <div class="access-route"><button data-open="P01">P01 · Splash</button><span>→</span><button data-open="P02">P02 · Login</button><span>→</span><button data-open="P05">P05 · Inicio</button><span>↗</span><button data-open="P08" class="buyer-route">P08 · Comprar</button><span>/</span><button data-open="P18" class="seller-route">P18 · Vender</button></div>
+      <p>Registro: P02 → P03 → P05 <span>·</span> Recuperación: P02 → P04 → P02 <span>·</span> Perfil (P06) y Notificaciones (P07) disponibles desde la navegación inferior.</p>
+    </section>
+    <div id="board"></div>
+    <noscript><p class="no-script">Activa JavaScript para mostrar las 27 pantallas y recorrer el prototipo.</p></noscript>
+  </main>
+  <footer class="site-footer"><div><span class="brand-mark">n</span><strong> Sketch inicial → Diseño final</strong><p>Práctica 06 · Comprador + Vendedor · Propuesta académica de marketplace</p></div><a href="../">Volver a la etapa de sketches ↗</a><p class="small">Datos ficticios. Prototipo de navegación sin backend ni transacciones reales. Ilustraciones SVG incluidas en el proyecto.</p></footer>
+  <dialog id="prototype" aria-labelledby="prototype-title">
+    <div class="dialog-toolbar"><div><span class="eyebrow">PROTOTIPO INTERACTIVO</span><h2 id="prototype-title">Vista de pantalla</h2></div><button id="close-prototype" class="close-button" aria-label="Cerrar prototipo">✕</button></div>
+    <div id="prototype-screen"></div>
+    <div class="dialog-actions"><button id="demo-back" class="text-button">← Pantalla anterior</button><button id="demo-home" class="text-button">Ir a Inicio</button></div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
