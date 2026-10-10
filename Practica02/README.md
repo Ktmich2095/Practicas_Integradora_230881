@@ -1,3 +1,5 @@
+[← Volver al README principal](../README.md) · [Ver evidencia interactiva](./index.html)
+
 # Práctica 02 - Arquitectura de Software
 
 ## Descripción
@@ -23,10 +25,10 @@ También se generó un diagrama interactivo en HTML para visualizar los componen
 
 ## Archivos de la práctica
 
-- [architecture-inicial.json](./visual-check/arquitectura-inicial.json)  
+- [arquitectura-inicial.json](./visual-check/arquitectura-inicial.json)
   Definición de la arquitectura generada con Archify.
 
-- [architecture-inicial.visual-check.html](./visual-check/architecture-inicial.visual-check.html)  
+- [arquitectura-inicial.visual-check.html](./visual-check/arquitectura-inicial.visual-check.html)
   Archivo de validación visual de la arquitectura.
 
 - [index.html](./index.html)  
