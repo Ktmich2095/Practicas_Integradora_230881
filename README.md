@@ -24,6 +24,7 @@
 |:---:|---|---|:---:|---|
 | **02** | **Arquitectura de Plataforma Móvil con Archify** | Instalar y configurar **Codex CLI** y **Archify** para generar un modelo de arquitectura interactivo en español de una plataforma móvil. | **24** | [\[Ver arquitectura interactiva\]](https://ktmich2095.github.io/Practicas_Integradora_230881/Practica02) |
 | **03** | **Modelo Canvas de Spotify con Archify** | Crear un modelo Canvas interactivo de **Spotify** con Archify y Codex, mostrando sus nueve bloques y su contenido completo al pasar el cursor o hacer clic. | **10** | [Ver Modelo Canvas interactivo](https://ktmich2095.github.io/Practicas_Integradora_230881/Practica03) |
+| **06** | **Diagrama de Secuencia de Pantallas de Mercado Libre** | Diseñar el flujo de navegación móvil de **Mercado Libre** para comprador y vendedor, identificando pantallas compartidas y específicas en una secuencia visual clara. | **20** | [GitHub Pages](https://ktmich2095.github.io/Practicas_Integradora_230881/Practica06) |
 
 ---
 
