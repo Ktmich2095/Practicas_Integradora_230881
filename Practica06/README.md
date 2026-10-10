@@ -1,3 +1,5 @@
+[← Volver al README principal](../README.md) · [Ver evidencia interactiva](./index.html)
+
 # Práctica 06: Diagrama de Secuencia de Pantallas
 
 ## Visualización de la práctica

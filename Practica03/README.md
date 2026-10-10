@@ -1,3 +1,5 @@
+[← Volver al README principal](../README.md) · [Ver evidencia interactiva](./index.html)
+
 # Práctica 03 - Boceto de Modelo Canvas con Archify
 
 ## Descripción
