@@ -1,5 +1,34 @@
 # Práctica 06: Diagrama de Secuencia de Pantallas
 
+## Visualización de la práctica
+
+La Práctica 06 presenta dos etapas del diseño de la aplicación. La página principal conserva los sketches originales y la nueva carpeta `final/` presenta su evolución a alta fidelidad.
+
+### ✏️ Sketches / Wireframes
+
+Primera propuesta de las 27 pantallas y del flujo de navegación en blanco y negro.
+
+[Ver sketches](./index.html)
+
+### ✨ Resultado final
+
+Mockups móviles de alta fidelidad de **Nexo**, un marketplace académico inspirado en Mercado Libre. Conserva las 27 pantallas y los roles Comprador y Vendedor, con un tablero organizado por grupos, conectores, ilustraciones SVG locales y un prototipo interactivo sin backend.
+
+[Ver resultado final](./final/)
+
+| Versión | Descripción | Acceso |
+| --- | --- | --- |
+| ✏️ Sketches | Wireframes y flujo inicial | [Ver](./index.html) |
+| ✨ Resultado final | Mockups de alta fidelidad | [Ver](./final/) |
+
+**GitHub Pages:** `…/Practica06/` muestra los sketches; `…/Practica06/final/` muestra el resultado final. Ambas etapas se enlazan mediante rutas relativas.
+
+En la versión final, pulsa **Explorar el prototipo** o un botón dentro de un teléfono para recorrer pantallas. Cierra el prototipo para volver al tablero. Cada sección se desplaza horizontalmente para mostrar todos los mockups. En seguimiento (P16), **Simular pedido entregado** habilita la calificación (P17). Los campos son ilustrativos y los datos son ficticios.
+
+Los IDs de la primera etapa (S01–S07, C08–C17 y V18–V27) corresponden por número a P01–P27 en la etapa final. La navegación principal y las ramas de acceso se conservan.
+
+**Archivos de alta fidelidad:** `final/index.html`, `final/styles.css` y `final/app.js`. Las ilustraciones de productos están incluidas como SVG en el código; no requieren imágenes externas ni una carpeta adicional de assets. Las capturas originales de `img/` se conservan como evidencia de los sketches.
+
 **Plataforma de referencia:** Mercado Libre.  
 **Roles seleccionados:** Comprador y Vendedor.  
 **Tipo de propuesta:** aplicación móvil de marketplace con sketches académicos de baja fidelidad.
@@ -72,15 +101,21 @@ Practica06/
 ├── diagramas/
 │   └── flujo_pantallas.md
 ├── sketches/
+│   ├── styles.css
+│   └── app.js
+├── index.html
+├── final/
 │   ├── index.html
 │   ├── styles.css
 │   └── app.js
+├── img/
+│   └── (capturas originales de los sketches)
 └── docs/
     ├── contexto_archify.md
     └── evidencias.md
 ```
 
-Abrir [sketches/index.html](sketches/index.html) en el navegador para visualizar todas las pantallas. El tablero separa los tres grupos y conecta el recorrido principal con flechas. Sus botones permiten recorrer pantallas individuales; “Ver todo el tablero” restaura el conjunto. No necesita instalación, servidor ni conexión a Internet.
+Abrir [index.html](./index.html) en el navegador para visualizar todos los sketches. El tablero separa los tres grupos y conecta el recorrido principal con flechas. Sus botones permiten recorrer pantallas individuales; “Ver todo el tablero” restaura el conjunto. No necesita instalación, servidor ni conexión a Internet. Desde el encabezado se accede a la nueva etapa de alta fidelidad.
 
 Consultar [el diagrama Mermaid](diagramas/flujo_pantallas.md) para las rutas principales, regresos y accesos comunes. Consultar [la guía de evidencias](docs/evidencias.md) para capturas, impresión y publicación.
 
